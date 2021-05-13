@@ -1,0 +1,58 @@
+.topBar{
+   
+    background-color:red;
+    background-image:linear-gradient(to right,
+     red,
+     orange,
+     yellow,
+     green,
+     blue,
+     indigo,
+     violet);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+      /* min-width: fit-content; */
+}
+
+.topBarCenter{
+    font-family: 'Dancing Script', cursive;
+    width:90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center
+
+}
+
+h2{
+    font-size: 1.5em;
+    /* padding-bottom: 5px; */
+
+}
+
+.icon{
+    padding: 0.7rem; 
+    transform: scale(1.5);  
+    transition-duration: 20s;
+}
+
+.icon:hover{
+    /* color:white; */
+    transform: scale(1.7);
+}
+
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 400px) {
+    .topBarCenter > h2{
+        display: none;
+    }
+
+  }

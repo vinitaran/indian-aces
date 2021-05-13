@@ -1,0 +1,116 @@
+.header{
+    /* background-color: aquamarine; */
+    width:100%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.header__left{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+
+}
+
+.headerCenter{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerLogo{
+    width: 80%;
+    padding: 8px;
+}
+
+.headerLogo:hover{
+    cursor: pointer;
+}
+
+.header_search{
+    display: flex;
+    justify-content: space-between;
+    /* width: 30%; */
+}
+
+.header_input{
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+}
+
+.header_input > input{
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.headerMotto{
+    width: 70%;
+}
+
+.headerButton > button{
+    width: 25vw;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+}
+
+.headerButton > button:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.searchButton{
+    cursor: pointer;
+}
+
+.header__right{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerMotto > h2{
+    font-size: 2.2em;
+    font-family: 'Dancing Script';
+ }
+
+@media only screen and (max-width: 600px) {
+    .headerCenter{
+        width: 98%;
+        /* flex-direction: column; */
+    }
+
+    .headerLogo{
+        width: 20vw;
+    }
+
+    .header__left{
+        width:95%;
+    }
+    /* .header_search {
+        width: 30%;
+        display: none;
+    }
+    .headerButton{
+        display: none;
+    } */
+
+    .headerMotto > h2{
+        font-size: 1.2em;
+    }
+
+    .header__right{
+        display: none;
+    }
+
+  }
