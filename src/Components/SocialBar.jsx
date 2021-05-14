@@ -1,21 +1,31 @@
 import React from 'react'
 import "../Components/SocialBar.css"
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import {Container, Segment} from "semantic-ui-react";
+import {FacebookShareButton, WhatsappShareButton, TwitterShareButton, EmailShareButton, RedditShareButton} from "react-share";
+import {FacebookIcon, WhatsappIcon, TwitterIcon, EmailIcon, RedditIcon} from "react-share";
 
 const SocialBar = () => {
     return (
         <div className="Wrapper">
-          <a href="https://m.facebook.com/IndianAces/">
-                    <FacebookIcon className="icons"/>
-                </a>
-                <a href="https://twitter.com/IndianAces_">
-                    <TwitterIcon className="icons" />
-                </a>
-                <a href="https://www.instagram.com/indianaces_">
-                    <InstagramIcon className="icons" />
-                </a>
+          <Container>
+              <Segment>
+                  <FacebookShareButton url="https://www.fawcettsociety.org.uk/" quote={"Inspire through your Story"} hashtag="#PrideMonth" >
+                    <FacebookIcon size={32} logoFillColor="white" ></FacebookIcon>
+                  </FacebookShareButton>
+                  <WhatsappShareButton url="https://www.fawcettsociety.org.uk/" title="Humans Of Queer" separator=":: " >
+                    <WhatsappIcon size={32} />
+                  </WhatsappShareButton>
+                  <TwitterShareButton url="https://www.fawcettsociety.org.uk/" title="Humans Of Queer" >
+                    <TwitterIcon size={32} />
+                  </TwitterShareButton>
+                  <EmailShareButton url="https://www.fawcettsociety.org.uk/" subject="Humans Of Queer" body="body" >
+                        <EmailIcon size={32} />
+                    </EmailShareButton>
+                    <RedditShareButton url="https://www.fawcettsociety.org.uk/" title="Humans Of Queer" windowWidth={660} windowHeight={460} >
+                        <RedditIcon size={32} />
+                    </RedditShareButton>
+              </Segment>
+          </Container>
         </div>
     )
 }

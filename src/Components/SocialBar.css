@@ -1,0 +1,13 @@
+.Wrapper{
+    position: fixed;
+    width: 4%;
+    margin: 0;
+    top: 52%;
+}
+
+.segment{
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}

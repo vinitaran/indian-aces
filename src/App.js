@@ -3,6 +3,8 @@ import Header from './Components/Header';
 import TopBar from "./Components/TopBar.jsx";
 import {BrowserRouter,Switch,Route} from "react-router-dom";
 import MenuBar from './Components/MenuBar';
+import SocialBar from "./Components/SocialBar.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
@@ -13,6 +15,12 @@ function App() {
             <Route exact path="/">
               <Header />
               <MenuBar />
+              <SocialBar />
+              <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
+              <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
+              <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
+              <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
+              <Footer />
             </Route>
             <Route exact path="/about">
               <Header />
