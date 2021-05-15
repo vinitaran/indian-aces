@@ -2,20 +2,21 @@
   background: red;
   width: 200px;
   position: absolute;
-  top: 80px;
+  top: 239px;
   list-style: none;
   text-align: start;
 }
 
 .dropdown-menu li {
-  background: #1888ff;
+  background: linear-gradient(
+    90deg
+    , rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-  background: #5cabff;
+  background: lightgray;
 }
-
 .dropdown-menu.clicked {
   display: none;
 }

@@ -43,6 +43,15 @@ function Navbar() {
               Home
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link
+              to='/about'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              About us
+            </Link>
+          </li>
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}
@@ -53,17 +62,53 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Services <i className='fas fa-caret-down' />
+              Categories <i className='fas fa-caret-down' />
             </Link>
             {dropdown && <Dropdown />}
           </li>
           <li className='nav-item'>
             <Link
-              to='/products'
+              to='/resources'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products
+              Resources
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/team'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              The Team
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/submit'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Submit
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/join-us'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Join Us
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/contribute'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Contribute
             </Link>
           </li>
           <li className='nav-item'>

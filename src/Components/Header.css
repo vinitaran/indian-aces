@@ -1,5 +1,7 @@
 .header{
-    /* background-color: aquamarine; */
+    /* position:sticky;
+    top:10vh; */
+    background-color: white;
     width:100%;
     display: flex;
     justify-content: center;
@@ -58,14 +60,16 @@
 
 .headerButton > button{
     width: 20vw;
-    background-color: black;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background-color: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);;
     color: white;
     font-weight: 800;
+    z-index:-1;
 }
 
 .headerButton > button:hover{
-    background-color: lightgray;
-    color: black;
+    background-color: rgb(42, 219, 19);
+    color:black;
 }
 
 .searchButton{
