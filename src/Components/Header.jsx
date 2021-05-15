@@ -33,7 +33,7 @@ const Header = () => {
                     </div>
                     <div className="header_search">
                         <div className="header_input">
-                            <input value={input} onChange={(e) => setInput(e.target.value)} className="MessageSender_input" placeholder="Search" type="text" />
+                            <input value={input} onChange={(e) => setInput(e.target.value)} className="MessageSender_input" placeholder="Search" type="text" size="6" />
                             <SearchIcon className="searchButton" onClick={getInputValue} />
                         </div>
                     </div>

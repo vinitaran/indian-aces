@@ -5,8 +5,17 @@
   font-family: 'Codystar', cursive;
   font-family: 'Dancing Script', cursive;
   font-family: 'Montserrat', sans-serif;
+  font-size: calc(8px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .headerMotto > h2{
   font-family: 'Dancing Script', cursive;
+}
+
+img{
+  width: 100%;
+}
+
+.footer__right > Button{
+  font-family: "Roboto Condensed",Arial,sans-serif;
 }

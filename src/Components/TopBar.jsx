@@ -12,12 +12,13 @@ const TopBar = () => {
                 <a href="https://m.facebook.com/IndianAces/">
                     <FacebookIcon className="icon"/>
                 </a>
-                <a href="https://twitter.com/IndianAces_">
-                    <TwitterIcon className="icon" />
-                </a>
                 <a href="https://www.instagram.com/indianaces_">
                     <InstagramIcon className="icon" />
                 </a>
+                <a href="https://twitter.com/IndianAces_">
+                    <TwitterIcon className="icon" />
+                </a>
+                
             </div>         
         </div>
     )

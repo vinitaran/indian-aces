@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     background-color: #eff2f5;
-    padding: 10px;
+    padding: 8px;
     margin-left: 10px;
     border-radius: 999px;
 }
@@ -57,7 +57,7 @@
 }
 
 .headerButton > button{
-    width: 25vw;
+    width: 20vw;
     background-color: black;
     color: white;
     font-weight: 800;
@@ -100,17 +100,17 @@
     /* .header_search {
         width: 30%;
         display: none;
-    }
+    } */
     .headerButton{
         display: none;
-    } */
+    } 
 
     .headerMotto > h2{
         font-size: 1.2em;
     }
 
-    .header__right{
+    /* .header__right > {
         display: none;
-    }
+    } */
 
   }
