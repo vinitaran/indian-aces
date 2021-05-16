@@ -30,10 +30,6 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        {/* <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          EPIC
-          <i class='fab fa-firstdraft' />
-        </Link> */}
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-lg fa-times' : 'fas fa-lg fa-bars'} />
         </div>
@@ -58,7 +54,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/services'
+              to='/categories'
               className='nav-links'
               onClick={closeMobileMenu}
             >

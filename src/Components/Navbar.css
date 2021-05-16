@@ -1,33 +1,24 @@
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  height: 40px;
+  height: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
 }
 
-.navbar-logo {
-  color: #fff;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-}
 
 .fa-firstdraft {
   margin-left: 0.5rem;
   font-size: 1.6rem;
-}
+} 
 
-.nav-menu {
+ .nav-menu {
   display: flex;
   text-align: center;
   width: 90vw;
   justify-content: space-between;
-  /* margin-right: 2rem; */
-}
+} 
 
 .nav-item {
   display: flex;
@@ -42,18 +33,24 @@
 }
 
 .nav-links:hover {
-  background-color:red;
+  background-color:#FF4397;
     background-image:linear-gradient(to right,
-     red,
-     orange,
-     yellow,
-     green,
-     blue,
-     indigo,
-     violet);
-  border-radius: 4px;
+    #EC6863,
+    #F8B276,
+    #FAE99B,
+    #36DDC3,
+    #5B83E3,
+    #837CE3 
+    );
+  /* background-color: lightgray; */
   transition: all 0.2s ease-out;
+  color: black;
 }
+.nav-menu.active{
+  colour:red;
+}
+
+
 
 .fa-bars {
   color: black;
@@ -82,14 +79,15 @@
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 80px;
+    top: 10vh;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
   }
 
   .nav-menu.active {
-    background: #242222;
+    /* background: #050505; */
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -104,27 +102,22 @@
   }
 
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: lightgray;
     border-radius: 0;
-  }
+  } 
 
-  /* .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  } */
 
   .menu-icon {
     color:black;
-    display: block;
-    position: sticky;
-    top: 0;
+    top: 2%;
     left: 10%;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
     align-items: center;
+    display: flex;
+    position:fixed;
+    z-index: 11;
   }
 
   .fa-times {
@@ -148,10 +141,13 @@
   .nav-links-mobile:hover {
     background: #fff;
     color: #1888ff;
+    background-color:lightgray;
     transition: 250ms;
   }
 
-  button {
-    display: none;
-  }
+  .nav-links:hover {
+    transition: all 0.2s ease-out;
+    color: black;
+} 
+
 }

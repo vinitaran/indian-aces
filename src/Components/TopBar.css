@@ -1,7 +1,7 @@
 .topBar{
     position:sticky;
     top:0;
-    background-color:#FF4397;
+    background-color:#EC6863;
     background-image:linear-gradient(to right,
     #FF4397,
     #FCC24C,
@@ -9,14 +9,19 @@
     #8cfabb,
     #526FAA,
     #8852A8
+    /* #EC6863,
+    #F8B276,
+    #FAE99B,
+    #36DDC3,
+    #5B83E3,
+    #837CE3 */
     );
     width: 100%;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: white; */
-      /* min-width: fit-content; */
+    z-index: 10;
 }
 
 .topBarCenter{

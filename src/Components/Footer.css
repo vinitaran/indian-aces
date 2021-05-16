@@ -36,28 +36,34 @@
 
 
 .footer__right > Button {
-    background-color:red;
+
+    background-color:#FF4397;
     background-image:linear-gradient(to right,
-     red,
-     orange,
-     yellow,
-     green,
-     blue,
-     indigo,
-     violet);
+    #FF4397,
+    #FCC24C,
+    #b7ff79,
+    #8cfabb,
+    #526FAA,
+    #8852A8
+    );
     width: 60%;
     /* padding: 10px; */
     font-size: 120%;
     padding-left: 50px;
     padding-right: 50px;
-    color: white;
+    color:black;
     font-weight: 900;
     font-family: "Roboto Condensed",Arial,sans-serif;
+    /* transition: width 5s linear 1s; */
+    animation: transitionIn 1s;
+    transition: ease-in-out 0.3s;
 }
 
 .footer__right > Button:hover{
-    background-color: lightgray;
-    color: black;
+    transform: scale(1.05); 
+    /* transform: scale(1.02); */
+    transition: ease-in-out 0.3s;
+    
 }
  @media only screen and (max-width: 400px) {
     .footer__main {

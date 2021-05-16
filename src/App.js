@@ -9,24 +9,49 @@ import Navbar from './Components/Navbar.js';
 function App() {
   return (
     <div className="App">
-      <TopBar />      
       <BrowserRouter>
+        <TopBar /> 
+        <Header />
+        <Navbar />
+        <SocialBar />
           <Switch>
             <Route exact path="/">
-              <Header />
-              <Navbar />
-              <SocialBar />
               <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
               <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
               <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
               <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
-              <Footer />
+              
             </Route>
             <Route exact path="/about">
-              <Header />
+              
+            </Route>
+            <Route exact path="/categories">
+              
+            </Route>
+            <Route exact path="/resources">
+              
+            </Route>
+            <Route exact path="/team">
+              
+            </Route>
+            <Route exact path="/submit">
+              
+            </Route>
+            <Route exact path="/join-us">
+              
+            </Route>
+            <Route exact path="/contribute">
+              
+            </Route>
+            <Route exact path="/contact-us">
+              
+            </Route>
+            <Route exact path="/about">
+              
             </Route>
             
           </Switch>
+          <Footer />
       </BrowserRouter>
       
     </div>

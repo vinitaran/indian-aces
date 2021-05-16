@@ -29,7 +29,9 @@ const Header = () => {
                 </div>
                 <div className="header__right">
                     <div className="headerButton">
-                        <Button type="submit" >Submit Your Story</Button>
+                            <Link to="/">
+                                <Button className="button" type="submit" >Submit Your Story</Button>
+                            </Link>
                     </div>
                     <div className="header_search">
                         <div className="header_input">
