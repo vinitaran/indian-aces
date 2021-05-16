@@ -5,6 +5,7 @@ import {BrowserRouter,Switch,Route} from "react-router-dom";
 import SocialBar from "./Components/SocialBar.jsx";
 import Footer from "./Components/Footer.jsx";
 import Navbar from './Components/Navbar.js';
+import Mainbody from './Components/Mainbody';
 
 function App() {
   return (
@@ -16,10 +17,7 @@ function App() {
         <SocialBar />
           <Switch>
             <Route exact path="/">
-              <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
-              <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
-              <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
-              <img alt="" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
+              <Mainbody />
               
             </Route>
             <Route exact path="/about">
