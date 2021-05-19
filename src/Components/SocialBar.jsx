@@ -10,7 +10,7 @@ const SocialBar = () => {
           <Container>
               <Segment>
                   <FacebookShareButton url="https://www.fawcettsociety.org.uk/" quote={"Inspire through your Story"} hashtag="#PrideMonth" >
-                    <FacebookIcon size={32} logoFillColor="white" ></FacebookIcon>
+                    <FacebookIcon size={32} ></FacebookIcon>
                   </FacebookShareButton>
                   <WhatsappShareButton url="https://www.fawcettsociety.org.uk/" title="Humans Of Queer" separator=":: " >
                     <WhatsappIcon size={32} />

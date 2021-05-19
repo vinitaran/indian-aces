@@ -28,9 +28,6 @@ const Footer = () => {
 
                 </div>
                 <div className="footer__right">
-                    {/* <Button variant="contained" color="white">
-                        Primary
-                    </Button> */}
                     <Button type="submit" >Subscribe</Button>
                 </div>
             </div>
