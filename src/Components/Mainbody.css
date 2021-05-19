@@ -1,12 +1,14 @@
 .mainbody{
+    /* position:relative; */
     margin-top: 5vh;
+    margin-bottom:5vh;
     width:100%;
     display: flex;
     justify-content: center;
 }
 
 .body__main{
-    width:90%;
+    width:85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -14,11 +16,24 @@
 }
 
 .body__elements{
-    margin: 10px;
+    position:relative;
+    margin: 20px;
     flex-basis: 150px;
     height: 150px;
-    width: 150px;
+    
     object-fit: cover;
+    
+    animation: transitionIn 1s;
+
+    border-radius: 8px;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 40px -px gray;
+    overflow: hidden;
+    cursor: pointer;
+
 }
 
 .body__elements__image{
@@ -29,9 +44,42 @@
 
 }
 
+.body__elements__info{
+    position: absolute;
+    bottom:0;
+    left:1%;
+    z-index: 3;
+    /* color: #fff; */
+    opacity: 0;
+}
+
+.body__elements:hover .body__elements__info {
+    opacity: 1;
+  }
+
+@keyframes transitionIn {
+    0% {
+        transform: scale(0);
+        transform: translateY(50px);
+        opacity: 0;        
+      }
+    
+      90% {
+        transform: scale(1.1);
+      }
+    
+      100% {
+        transform: scale(1);
+        transform: translateY(0px);
+        opacity: 1;
+      }
+  }
+
 @media screen and (max-width: 560px){
     .body__elements{
         margin: 5px;
+        flex-basis:120px;
+        height:120px;
     }
 
     
@@ -41,4 +89,18 @@
     .body__main{
         justify-content: center;
     }
+};
+
+.card-blur {
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 1px);
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
 }
+
+.body__elements:hover {
+    opacity: 0.6;
+}
+
