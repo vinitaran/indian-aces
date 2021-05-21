@@ -6,6 +6,7 @@ import SocialBar from "./Components/SocialBar.jsx";
 import Footer from "./Components/Footer.jsx";
 import Navbar from './Components/Navbar.js';
 import Mainbody from './Components/Mainbody';
+import AboutUs from "./Components/pages/AboutUs";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
               
             </Route>
             <Route exact path="/about">
-              
+              <AboutUs />
             </Route>
             <Route exact path="/categories">
               
@@ -44,10 +45,6 @@ function App() {
             <Route exact path="/contact-us">
               
             </Route>
-            <Route exact path="/about">
-              
-            </Route>
-            
           </Switch>
           <Footer />
       </BrowserRouter>
