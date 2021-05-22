@@ -1,4 +1,5 @@
 import React, {useEffect,useState} from 'react';
+import "./AboutUs.css"
 
 const AboutUs = () => {
 
@@ -19,8 +20,10 @@ const AboutUs = () => {
 
     return (
         <div className="aboutUs">
-            <h1>About Us</h1>
-            <h2>{aboutUs}</h2>
+            <div className="aboutUs_wrapper">
+            <div className="aboutUs_title"><h1>About Us</h1></div>
+           <div className="aboutUs_body"> <h2>{aboutUs}</h2></div>
+            </div>
         </div>
     )
 }
