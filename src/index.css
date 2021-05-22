@@ -15,4 +15,15 @@ code {
 
 #root{
   min-height:100vh;
+  background-color: #eeeeee;
 }
+
+
+/* img:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+} */

@@ -7,6 +7,8 @@ import Footer from "./Components/Footer.jsx";
 import Navbar from './Components/Navbar.js';
 import Mainbody from './Components/Mainbody';
 import AboutUs from "./Components/pages/AboutUs";
+// import Story from './Components/pages/Story';
+import Blog from './Components/pages/Blog';
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
               <AboutUs />
             </Route>
             <Route exact path="/categories">
-              
+              <Blog />
             </Route>
             <Route exact path="/resources">
               
