@@ -117,6 +117,7 @@
   }
 
   img:hover {
+    filter: brightness(70%);
     -webkit-filter: brightness(70%);
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;

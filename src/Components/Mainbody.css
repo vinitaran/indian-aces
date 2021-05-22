@@ -123,6 +123,7 @@
 }
 
 .body__elements:hover .body__elements__image{
+    filter: brightness(70%);
     -webkit-filter: brightness(70%);
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
