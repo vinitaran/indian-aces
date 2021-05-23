@@ -33,6 +33,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 10px;
 }
 
 .blog__title{
@@ -52,6 +53,7 @@
     width: 25vh;
 }
 .blog__middle{
+    line-height: 3;
     text-align: justify;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.14);
     -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.14);
