@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-
+import "./JoinUs.css"
 const JoinUs = () => {
 
     const [joinUs, setJointUs] = useState([]);

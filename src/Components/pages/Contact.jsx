@@ -1,5 +1,5 @@
 import React, { useState, useEffect }from 'react'
-
+import "./Contact.css"
 const Contact = () => {
     const [contactUs, setContactUs] = useState([]);
 
@@ -18,7 +18,8 @@ const Contact = () => {
 
     return (
         <div className="contact">
-            <h2>Contact Us</h2>
+           <div className="contact_wrapper">
+           <div className="contact_title"> <h2>Contact Us</h2></div>
             {
                 contactUs.map((element) => {
                     return(
@@ -29,6 +30,7 @@ const Contact = () => {
                     )
                 })
             }
+            </div>
         </div>
     )
 }
