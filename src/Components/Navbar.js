@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -10,6 +10,21 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const [tabs, setTabs] = useState([]);
+
+    useEffect(() => {
+        const getDataFromDB = async () =>{
+            await fetch("https://indian-aces.herokuapp.com/tabs").then((response) => {
+                return response.json();
+                }).then((data) => {
+                    setTabs(data);
+                });
+        }
+        getDataFromDB();
+    }, []);
+
+    console.log(tabs);
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
@@ -34,6 +49,17 @@ function Navbar() {
           <i className={click ? 'fas fa-lg fa-times' : 'fas fa-lg fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        {/* {
+              tabs.map((element) => {
+                return(
+                  <li className='nav-item'>
+                    <Link to={element.tabName === 'Home' ? `/` : `/${element.tabName}`} className='nav-links' onClick={closeMobileMenu}>
+                      {element.tabName} {element.subtabs.length ? <i className='fas fa-caret-down' />: "" }
+                    </Link>
+                  </li>
+                )
+              })
+            } */}
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               Home
@@ -54,7 +80,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/categories'
+              to='/'
               className='nav-links'
               onClick={closeMobileMenu}
             >
@@ -115,7 +141,7 @@ function Navbar() {
             >
               Contact Us
             </Link>
-          </li>            
+          </li>
         </ul>
       </nav>
     </>

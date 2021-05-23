@@ -7,10 +7,12 @@ import Footer from "./Components/Footer.jsx";
 import Navbar from './Components/Navbar.js';
 import Mainbody from './Components/Mainbody';
 import AboutUs from "./Components/pages/AboutUs";
-// import Story from './Components/pages/Story';
 import Blog from './Components/pages/Blog';
+import JoinUs from './Components/pages/JoinUs';
+import Contact from './Components/pages/Contact';
 
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -26,9 +28,6 @@ function App() {
             <Route exact path="/about">
               <AboutUs />
             </Route>
-            <Route exact path="/categories">
-              <Blog />
-            </Route>
             <Route exact path="/resources">
               
             </Route>
@@ -39,13 +38,16 @@ function App() {
               
             </Route>
             <Route exact path="/join-us">
-              
+              <JoinUs />
             </Route>
             <Route exact path="/contribute">
               
             </Route>
             <Route exact path="/contact-us">
-              
+              <Contact />
+            </Route>
+            <Route path="/blog">
+              <Blog />
             </Route>
           </Switch>
           <Footer />
