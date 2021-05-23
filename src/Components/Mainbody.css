@@ -1,7 +1,5 @@
 .mainbody{
     /* position:relative; */
-    margin-top: 5vh;
-    margin-bottom:5vh;
     width:100%;
     display: flex;
     justify-content: center;
@@ -13,6 +11,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center;
+    margin-bottom: 10vh;
 }
 
 .body__elements{
@@ -54,7 +53,9 @@
 }
 
 .body__elements:hover .body__elements__info {
-    background-color: beige;
+    background-color: white;
+    background-color:black;
+    color: white;
     opacity: 1;
     font-size:70%;
     width: 100%;
