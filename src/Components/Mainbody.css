@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 560px){
     .body__elements{
-        margin: 5px;
+        margin: 15px;
         flex-basis:120px;
         height:120px;
     }
