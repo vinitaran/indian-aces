@@ -59,8 +59,7 @@
     background-color: white;
     margin-top: 10px;
     height: 60%; 
-    padding-left: 10px;
-    padding-right: 10px;   
+    padding:20px;
 }
 .blog__bottom{
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.14);
