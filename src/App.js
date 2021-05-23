@@ -10,6 +10,7 @@ import AboutUs from "./Components/pages/AboutUs";
 import Blog from './Components/pages/Blog';
 import JoinUs from './Components/pages/JoinUs';
 import Contact from './Components/pages/Contact';
+import ComingSoon from './Components/pages/ComingSoon';
 
 function App() {
 
@@ -24,6 +25,9 @@ function App() {
             <Route exact path="/">
               <Mainbody />
               
+            </Route>
+            <Route exact path="/ComingSoon">
+              <ComingSoon/>
             </Route>
             <Route exact path="/about">
               <AboutUs />

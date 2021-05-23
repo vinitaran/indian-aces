@@ -18,9 +18,16 @@ const JoinUs = () => {
     console.log(joinUs);
 
     return (
+
         <div className="joinUs">
-            <h1>Join Us</h1>
-            <h2>{joinUs}</h2>
+            <div className="join_wrapper">
+            <div className="join_title">
+                <h1>Join Us</h1>
+            </div>
+            <div className="join_body">
+                <h2>{joinUs}</h2>
+            </div>
+            </div>
         </div>
     )
 }
