@@ -53,17 +53,17 @@
 }
 
 .body__elements:hover .body__elements__info {
-    background-color: white;
-    background-color:black;
-    color: white;
-    opacity: 1;
-    font-size:70%;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: transitionInElements 0.4s;
+  background-color: white;
+  /* background-color: black; */
+  color: #101010;
+  opacity: 1;
+  font-size: 70%;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: transitionInElements 0.4s;
   }
 
 @keyframes transitionIn {
