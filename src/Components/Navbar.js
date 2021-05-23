@@ -13,18 +13,18 @@ function Navbar() {
 
   const [tabs, setTabs] = useState([]);
 
-    useEffect(() => {
-        const getDataFromDB = async () =>{
-            await fetch("https://indian-aces.herokuapp.com/tabs").then((response) => {
-                return response.json();
-                }).then((data) => {
-                    setTabs(data);
-                });
-        }
-        getDataFromDB();
-    }, []);
+  useEffect(() => {
+    const getDataFromDB = async () => {
+      await fetch("https://indian-aces.herokuapp.com/tabs").then((response) => {
+        return response.json();
+      }).then((data) => {
+        setTabs(data);
+      });
+    }
+    getDataFromDB();
+  }, []);
 
-    console.log(tabs);
+  console.log(tabs);
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
@@ -49,18 +49,19 @@ function Navbar() {
           <i className={click ? 'fas fa-lg fa-times' : 'fas fa-lg fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-        {/* {
+          {
               tabs.map((element) => {
                 return(
                   <li className='nav-item'>
-                    <Link to={element.tabName === 'Home' ? `/` : `/${element.tabName}`} className='nav-links' onClick={closeMobileMenu}>
-                      {element.tabName} {element.subtabs.length ? <i className='fas fa-caret-down' />: "" }
+                    <Link to={element.navigationUrl} className='nav-links' onClick={closeMobileMenu}>
+                      {element.tabName} {element.subtabs && element.subtabs.length > 0 ? <i className='fas fa-caret-down' />: "" }
                     </Link>
+                    {element.subtabs && element.subtabs.length > 0 ? <Dropdown tabs={element.subtabs} /> : null}
                   </li>
                 )
               })
-            } */}
-          <li className='nav-item'>
+            }
+          {/* <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               Home
             </Link>
@@ -141,7 +142,7 @@ function Navbar() {
             >
               Contact Us
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>
